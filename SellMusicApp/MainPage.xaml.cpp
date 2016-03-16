@@ -21,8 +21,22 @@ using namespace Windows::UI::Xaml::Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
+Item::Item() :_Title(""), _TrackName(""), _TrackAlbum("") {
+
+}
+
 MainPage::MainPage()
 {
 	InitializeComponent();
 	mediaElement->Play();
+
+	this->dataSrc = ref new StoreData();
+
+	Item^ im = ref new Item();
+
+	this->dataSrc->Items->Append(im);
+	this->dataSrc->Items->Append(im);
+	this->dataSrc->Items->Append(im);
+	this->dataSrc->Items->Append(im);
+	this->dataSrc->Items->Append(im);
 }

@@ -20,8 +20,8 @@
             <ListView x:Name="listView" Margin="0">
                 <ListViewItem>
                     <Grid>
-                        <Image Source="UIKit/ion-ios-person.png" Width="20" Height="20" Stretch="Fill" />
-                        <TextBlock Text="Artists" HorizontalAlignment="Right" Margin="0,0,-48,0" Width="42" />
+                        <Image Source="UIKit/ion-ios-person.png" Width="10" Height="10" Stretch="Fill" />
+                        <TextBlock Text="Artists" HorizontalAlignment="Right" Margin="0,0,-48,0" Width="42" FontSize="13.333" />
                     </Grid>
                 </ListViewItem>
             </ListView>
@@ -32,29 +32,17 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Image x:Name="image1" Source="UIKit/KBust_Header_01.jpg" Stretch="Fill" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
-            <ListView Grid.Row="1" Grid.ColumnSpan="3">
-                <ListViewItem Height="100">
-                    <Grid HorizontalAlignment="Stretch" Margin="0,-12.667,0,-20.333">
-                        <Image Source="UIKit/emimcdade_album.jpg" Width="75" Margin="10,0,0,0" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment, TopPosition, BottomPosition" Height="75"/>
-                        <TextBlock Text="Emi McDade" HorizontalAlignment="Left" Margin="96,28,-3,27" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
-                        <TextBlock Text="Emi McDade" HorizontalAlignment="Left" Margin="191,28,-93,12" TextAlignment="Center" d:LayoutOverrides="Height, TopPosition, BottomPosition" />
-                        <TextBlock Text="3m 5s" HorizontalAlignment="Left" Margin="283,28,-142,12" TextAlignment="Center" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="#FF7A7A7A" />
-
-                    </Grid>
-
-                </ListViewItem>
-
-                <ListViewItem Height="100">
-                    <Grid HorizontalAlignment="Stretch" Margin="0,-12.667,0,-20.333">
-                        <Image Source="UIKit/JulesM_thumb01.jpg" Width="75" Margin="10,0,0,0" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment, TopPosition, BottomPosition" Height="75"/>
-                        <TextBlock Text="Jules M" HorizontalAlignment="Left" Margin="96,28,-3,27" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
-                        <TextBlock Text="Jules M" HorizontalAlignment="Left" Margin="191,28,-93,12" TextAlignment="Center" d:LayoutOverrides="Height, TopPosition, BottomPosition" />
-                        <TextBlock Text="4m 25s" HorizontalAlignment="Left" Margin="283,28,-142,12" TextAlignment="Center" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="#FF7A7A7A" />
-
-                    </Grid>
-
-                </ListViewItem>
-
+            <ListView Grid.Row="1" ItemsSource="{x:Bind DataSource.Items}" Margin="0,0,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0">
+                            <Image Source="UIKit/emimcdade_album.jpg" Width="75" Margin="-12,0,0,0" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment, TopPosition, BottomPosition" Height="75"/>
+                            <TextBlock Text="Emi McDade" HorizontalAlignment="Left" Margin="76,28,-3,27" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                            <TextBlock Text="Emi McDade" HorizontalAlignment="Left" Margin="171,28,-93,12" TextAlignment="Center" d:LayoutOverrides="Height, TopPosition, BottomPosition" />
+                            <TextBlock Text="3m 5s" HorizontalAlignment="Left" Margin="263,28,-142,12" TextAlignment="Center" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="#FF7A7A7A" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </Grid>
     </Grid>
