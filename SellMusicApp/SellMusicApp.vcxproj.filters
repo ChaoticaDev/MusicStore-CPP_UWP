@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>befd7034-da4d-4149-ba0e-1ba205ca7b2a</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>446f8ea2-eb24-460a-8b95-4b13382096a1</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Assets\UIKIT">
+      <UniqueIdentifier>{bdcfea8c-ef4f-4ff9-a23f-f68b54a970a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="UIKit\fa-play-circle-o-default.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-play-default.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-music.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-backward.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-fast-backward.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-fast-forward.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-forward.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-heartbeat.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\fa-heart-o.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\icomoon-heart-broken.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\ion-ios-albums.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\ion-ios-person.png">
+      <Filter>Assets\UIKIT</Filter>
+    </Image>
+    <Image Include="UIKit\KBust_Banner.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="UIKit\KBust_Header_01.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="UIKit\emimcdade_album.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="UIKit\JulesM_thumb01.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SellMusicApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+</Project>
