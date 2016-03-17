@@ -24,6 +24,7 @@ namespace SellMusicApp
 		Platform::String^  _Title;
 		Platform::String^ _TrackName;
 		Platform::String^ _TrackAlbum;
+		Platform::String^ _TrackArtist;
 		event PropertyChangedEventHandler^ _PropertyChanged;
 
 
@@ -41,11 +42,11 @@ namespace SellMusicApp
 		{
 			Platform::String^ get()
 			{
-				return _TrackName;
+				return this->_TrackName;
 			}
 			void set(Platform::String^ value)
 			{
-				_TrackName = value;
+				this->_TrackName = value;
 				OnPropertyChanged("TrackName");
 			}
 		}
@@ -56,11 +57,11 @@ namespace SellMusicApp
 		{
 			Platform::String^ get()
 			{
-				return _Title;
+				return this->_Title;
 			}
 			void set(Platform::String^ value)
 			{
-				_Title = value;
+				this->_Title = value;
 				OnPropertyChanged("Title");
 			}
 		}
@@ -71,15 +72,29 @@ namespace SellMusicApp
 		{
 			Platform::String^ get()
 			{
-				return _TrackAlbum;
+				return this->_TrackAlbum;
 			}
 			void set(Platform::String^ value)
 			{
-				_TrackAlbum = value;
+				this->_TrackAlbum = value;
 				OnPropertyChanged("TrackAlbum");
 			}
 		}
 
+
+		//Track Owner : Stage name
+		property Platform::String^ TrackArtist
+		{
+			Platform::String^ get()
+			{
+				return this->_TrackArtist;
+			}
+			void set(Platform::String^ value)
+			{
+				this->_TrackArtist = value;
+				OnPropertyChanged("TrackArtist");
+			}
+		}
 
 	};
 
@@ -121,5 +136,7 @@ namespace SellMusicApp
 
 
 	private:
+		void ListView_ItemClick(Platform::Object^ sender, Windows::UI::Xaml::Controls::ItemClickEventArgs^ e);
+		void ListView_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^ e);
 	};
 }
